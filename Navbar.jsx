@@ -1,0 +1,18 @@
+import React from 'react';
+import { Link } from 'react-scroll';
+
+const Navbar = () => {
+  return (
+    <nav className="navbar">
+      <h1 className="logo">Garuda Pro</h1>
+      <ul>
+        <li><Link to="hero" smooth={true}>Home</Link></li>
+        <li><Link to="about" smooth={true}>About</Link></li>
+        <li><Link to="projects" smooth={true}>Projects</Link></li>
+        <li><Link to="contact" smooth={true}>Contact</Link></li>
+      </ul>
+    </nav>
+  );
+};
+
+export default Navbar;
